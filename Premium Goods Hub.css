@@ -1,0 +1,279 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-bg: #f9f9f9;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Logo styling with flexbox */
+.logo {
+    display: flex;
+    align-items: center; /* Align video and text vertically */
+    gap: 10px; /* Space between video and text */
+}
+
+@keyframes rotate360 {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 80px;
+    padding: 4rem 2rem;
+    background: whitesmoke;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.cart-count {
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: relative;
+    top: -5px;
+    left: -3px;
+    color: hsl(0, 100%, 50%);
+}
+
+/* Products Grid */
+.products {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: whitesmoke;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    border-radius: 2opx;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-info {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.product-price {
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.product-actions {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-actions .btn {
+    transition: transform 0.2s;
+}
+
+.product-actions .btn:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    background: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+}
+
+/* Newsletter Section */
+.newsletter {
+    background: var(--primary-color);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.newsletter-form {
+    max-width: 500px;
+    margin: 1rem auto;
+}
+
+.newsletter-input {
+    padding: 0.8rem;
+    width: 70%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter-btn {
+    padding: 0.8rem 1.5rem;
+    background: var(--accent-color);
+    border: none;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Feedback Section */
+.feedback {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.feedback h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.feedback form {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.feedback input, .feedback textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.feedback button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 60%;
+    margin: auto;
+}
+
+.feedback button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background: var(--light-bg);
+    padding: 4rem 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: row; /* Stack navigation links vertically */
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    product-card{
+        grid-template-columns: 3fr;
+        flex-direction: row; /* Stack navigation links vertically */
+    }
+
+    .products-grid {
+        grid-template-columns: 3fr;
+        flex-direction: row; /* Stack navigation links vertically */
+    }
+}

@@ -1,0 +1,71 @@
+.checkout-container {
+            max-width: 800px;
+            margin: 80px auto 2rem;
+            padding: 2rem;
+        }
+
+        .checkout-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            background:whitesmoke;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            color: black;
+        }
+
+        h3{
+            color: red;
+        }
+
+        h4{
+            margin-top: 20px;
+        }
+
+        p {
+            color: black;  /* Fix incorrect color syntax */
+            font-size: 22px; /* Increase text size */
+            font-weight: 800; /* Make the text bolder */
+            border: 2px solid black; /* Add a black border */
+            padding: 10px; /* Add padding for better appearance */
+            background-color: #ffe6e6; /* Light red background for alert */
+            border-radius: 5px; /* Smoothen the border */
+        }
+        .error-list {
+            color: #e74c3c;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #e74c3c;
+            border-radius: 4px;
+        }
+
+        .success-message {
+            color: #2ecc71;
+            padding: 2rem;
+            text-align: center;
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }

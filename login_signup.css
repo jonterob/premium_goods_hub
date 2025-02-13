@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #007bff, #6610f2);
+}
+
+/* Authentication Container */
+.auth-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Heading */
+.auth-container h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Input Fields */
+.auth-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.auth-container input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Login Button */
+.auth-container button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-container button:hover {
+    background: #0056b3;
+}
+
+/* Error Message */
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.alert.error {
+    background: #ffdddd;
+    color: #d8000c;
+    border-left: 5px solid #d8000c;
+}
+
+/* Signup Link */
+.auth-container p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.auth-container a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .auth-container {
+        width: 90%;
+    }
+}
