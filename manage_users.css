@@ -1,0 +1,11 @@
+/* Ensure the navbar content is aligned properly */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Align items to the left and right */
+    align-items: center;
+}
+
+/* Add extra space between navbar brand and logout button */
+.logout-container {
+    margin-left: auto; /* Push logout button to the right */
+}

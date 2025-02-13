@@ -1,0 +1,143 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: auto;
+    text-align: center;
+    overflow-x: hidden; /* Disables horizontal scrolling */
+    margin: 0; /* Removes any default margin that might cause overflow */
+    padding: 0; /* Removes any default padding */
+}
+
+/* Heading */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Table Container */
+.table-container {
+    width: 70%;
+    margin: auto;
+    overflow-x: auto;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: auto;
+}
+
+/* Table Header */
+ td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Table Header Background */
+th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hover Effect on Rows */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Select and Button Styling */
+select, button {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button Styling */
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 6px 10px;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #218838;
+}
+
+/* Link Styling */
+a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+/* Link Hover Effect */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* Ensure the navbar content is aligned properly */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4a261;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    flex-wrap: nowrap;
+    border-bottom: 2px solid #ddd;
+    padding: 12px 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar .btn-danger {
+    border: none; /* Removes the border */
+    padding: 12px 25px; /* Adds padding to make the button larger and more clickable */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    font-size: 20px;
+    color: white; /* White text color */
+    margin-left: auto; /* Push logout button to the right */
+}
+
+
+.navbar a:hover {
+    color: #e76f51;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700; /* Very bold */  
+    color: #333; /* Dark text color for contrast */
+}

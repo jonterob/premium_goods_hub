@@ -1,0 +1,106 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f7fc;
+    color: #333;
+}
+h1, h2 {
+    color: #444;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 2px solid #ddd;
+    background-color: wheat;
+}
+.navbar-brand {
+    font-weight: bold;
+}
+.navbar .btn-danger {
+    background-color: #e74c3c;
+    border: none;
+}
+.navbar .btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* Sidebar */
+.list-group-item {
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 5px solid #007bff;
+    transition: all 0.3s ease-in-out;
+}
+.list-group-item:hover,
+.list-group-item-action:hover {
+    background-color: #2980b9;
+    color: white;
+    cursor: pointer;
+    transform: translateX(5px);
+}
+.list-group-item > p {
+    margin: 0;
+    font-size: 14px;
+}
+.list-group-item i {
+    color: #007bff;
+}
+
+/* Cards */
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+.card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.card p {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Card Colors */
+.card.bg-primary { background: linear-gradient(45deg, #3498db, #2980b9); }
+.card.bg-success { background: linear-gradient(45deg, #2ecc71, #27ae60); }
+.card.bg-warning { background: linear-gradient(45deg, #f39c12, #e67e22); }
+.card.bg-danger { background: linear-gradient(45deg, #e74c3c, #c0392b); }
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin-top: 30px;
+}
+.row.text-center {
+    margin-bottom: 30px;
+}
+
+/* Notifications */
+.list-group-item strong {
+    font-weight: bold;
+    color: #2c3e50;
+}
+.list-group-item span {
+    color: #95a5a6;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .col-md-3, .col-md-9 {
+        margin-bottom: 20px;
+    }
+    .navbar .container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
